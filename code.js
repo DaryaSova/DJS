@@ -77,3 +77,4 @@ let num = 50;
 //     }
 //     console.log(i);
 // }
+var l = 10;
