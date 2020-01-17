@@ -1,3 +1,6 @@
+// {
+//     "esversion"; 6
+//   }
 // let arr = ['plum.png', 'orande.jpg', 'apple.bmp'];
 
 // console.log(arr[1]);
@@ -30,7 +33,7 @@
 // let isClose = false;
 // console.log(isCheked || isClose);
 
-let num = 50;
+// let num = 50;
 
 // if (num < 49) {
 //     console.log("Не верно");
@@ -77,4 +80,39 @@ let num = 50;
 //     }
 //     console.log(i);
 // }
-var l = 10;
+// var l = 10;
+
+// function showFirstMessege(text) {
+//     alert(text);
+//     let num = 20;
+// }
+
+// showFirstMessege("Hello world");
+// console.log(num);
+
+// function calc (a,b) {
+//     return(a + b);
+
+// }
+
+ let calc = (a, b) => a + b
+
+console.log(calc(3,4));
+
+function retVar() {
+    let num = 5255;
+    return num;
+}
+
+let anotherNum = retVar();
+console.log(anotherNum);
+
+let str = "test";
+console.log(str.length); //свойство length
+console.log(str.toUpperCase());  // метод
+console.log(str.toLowerCase());
+
+let twelvw = "px12.2";
+// console.log(Math.round(twelvw));
+console.log(parseInt(twelvw));
+console.log(parseFloat(twelvw));
