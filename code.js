@@ -95,24 +95,49 @@
 
 // }
 
- let calc = (a, b) => a + b
+//  let calc = (a, b) => a + b
 
-console.log(calc(3,4));
+// console.log(calc(3,4));
 
-function retVar() {
-    let num = 5255;
-    return num;
-}
+// function retVar() {
+//     let num = 5255;
+//     return num;
+// }
 
-let anotherNum = retVar();
-console.log(anotherNum);
+// let anotherNum = retVar();
+// console.log(anotherNum);
 
-let str = "test";
-console.log(str.length); //свойство length
-console.log(str.toUpperCase());  // метод
-console.log(str.toLowerCase());
+// let str = "test";
+// console.log(str.length); //свойство length
+// console.log(str.toUpperCase());  // метод
+// console.log(str.toLowerCase());
 
-let twelvw = "px12.2";
-// console.log(Math.round(twelvw));
-console.log(parseInt(twelvw));
-console.log(parseFloat(twelvw));
+// let twelvw = "px12.2";
+// // console.log(Math.round(twelvw));
+// console.log(parseInt(twelvw));
+// console.log(parseFloat(twelvw));
+// function first () {
+//     setTimeout(function() {
+//         console.log(1);
+//     } , 500);
+// }
+
+// function second() {
+//     console.log(2);
+// }
+
+// first();
+// second();
+
+// function learnJS (lang, callback) {
+//     console.log("я учу " + lang);
+//     callback();
+// }
+
+
+
+// function done () {
+//     console.log("я прошел третий урок");
+// }
+
+// learnJS("Javasc", done);
