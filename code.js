@@ -144,25 +144,74 @@
 
 // let obj = new Object();
 
-let option = {
-    width : 1024,
-    height : 1024,
-    name : "test"
-};
+// let option = {
+//     width : 1024,
+//     height : 1024,
+//     name : "test"
+// };
 
-console.log(option.name);
+// console.log(option.name);
 
-option.bool = false;
-option.colors = {
-    border : "black",
-    bg : "red"
-}
-delete option.bool;
+// option.bool = false;
+// option.colors = {
+//     border : "black",
+//     bg : "red"
+// }
+// delete option.bool;
 
-console.log(option);
+// console.log(option);
 
-for (let key in option) {
-    console.log("Свойство " + key + " Значение " + option[key]);
-}
+// for (let key in option) {
+//     console.log("Свойство " + key + " Значение " + option[key]);
+// }
 
-console.log(Object.keys(option).length); 
+// console.log(Object.keys(option).length); 
+
+// let arr = ["first","second",5,10,9,5];
+
+// console.log(arr.length);
+// console.log(arr);
+// arr.pop();
+// arr.push("5");
+
+// arr.shift();
+// arr.unshift("1"); 
+// for(let i = 0; i < arr.length; i++) {
+//     console.log("номер элемента " + i + " значение " + arr[i]);
+// }
+
+// arr.forEach(function(i , mass) {
+//     console.log(i  + ": " );
+// });
+
+
+// let mass = [1,3,4,5,7];
+
+// for (let key in mass) {
+//     console.log(key);
+// }
+
+// for (let key of mass) {
+//     console.log(key);
+// }
+
+// // console.log(arr);
+
+
+// let ans = prompt("ascniabcihacb"),
+//     arr = [];
+
+// arr = ans.split(",");
+// console.log(arr);
+
+// let arr = ["sjefnijnf", "sfiwwiwiwiwiiw", 5558];
+//     i = arr.join(", ");
+// console.log(i);
+
+// let arr = [1,15,4];
+//     i = arr.sort(compareNum);
+
+// function compareNum(a,b) {
+//     return a-b;
+// }    
+// console.log(arr); 
