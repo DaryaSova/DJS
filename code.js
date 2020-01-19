@@ -252,3 +252,71 @@
 
 // console.log(arr);
 
+// 3 4 6 
+// "string", 'string', `string`; 
+// true / false 
+// null // чего-то просто не существует 
+// undefined // что-то существует, но значния никакого нет
+
+
+// const obj = {
+//     name: "Alex"
+// }
+//             0   1   2   3
+// const arr = [1, 2, 5 , 6];
+
+// - to String
+// 1)
+// console.log((typeof(String(4))));
+
+// //2)
+
+// console.log((typeof("q" + false)));
+// console.log("http://vk.com/catalog/" + 5);
+
+
+// // to Number
+
+// // 1)
+// console.log((typeof(Number(5 + "5"))));
+// // 2)
+ 
+// // 3)
+// console.log((typeof(parseInt("15px", 10))));
+
+
+// let ans = +promt("Hello ", "");
+
+
+// 0 , '', null , undefined , NaN(число) // (false)
+//  // 
+
+//  // булева
+//  // 1)
+// let switcher = null;
+// if (switcher) {
+//     console.log("working ");
+// }
+
+// switcher = 5;
+// if (switcher) {
+//     console.log("working ");
+// }
+
+// // //2)
+// // console.log((typeof(Boolean("5"))));
+// // // 3)
+// // console.log((typeof((!!"5"))));
+
+// let box = document.getElementById("box"),
+//     btn = document.getElementsByTagName("button"),
+//     circle = document.getElementsByClassName("circle"),
+//     heart = document.querySelectorAll(".wrapper .heart");
+//     oneHeart = document.querySelector(".heart");
+// console.log(box);
+// console.log(btn);
+// console.log(btn[0]);
+// console.log(circle[2]);
+// console.log(heart);
+// console.log(oneHeart);
+
