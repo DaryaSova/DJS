@@ -311,7 +311,7 @@
 let box = document.getElementById("box"),
     btn = document.getElementsByTagName("button"),
     circle = document.getElementsByClassName("circle"),
-    heart = document.querySelectorAll(".heart");
+    heart = document.querySelectorAll(".heart"),
     oneHeart = document.querySelector(".heart"),
     wrapper = document.querySelector(".wrapper");
 
@@ -345,8 +345,8 @@ div.textContent = "hello world";
 
 
 document.body.insertBefore(div, circle[0]);
-document.body.removeChild(circle[1]);
-wrapper.removeChild(heart[1]);
+// document.body.removeChild(circle[1]);
+// wrapper.removeChild(heart[1]);
 
 document.body.replaceChild(btn[1], circle[1]);
 
