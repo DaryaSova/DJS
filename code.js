@@ -312,7 +312,8 @@ let box = document.getElementById("box"),
     btn = document.getElementsByTagName("button"),
     circle = document.getElementsByClassName("circle"),
     heart = document.querySelectorAll(".heart");
-    oneHeart = document.querySelector(".heart");
+    oneHeart = document.querySelector(".heart"),
+    wrapper = document.querySelector(".wrapper");
 
 box.style.backgroundColor = "blue";
 
@@ -336,7 +337,18 @@ let div = document.createElement("div"),
     
 div .classList.add("black");
 
-document.body.appendChild(div);
+// document.body.appendChild(div);
+// wrapper.appendChild(div);
+
+// div.innerHTML = "<h1>hello world</h1>";
+div.textContent = "hello world";
+
+
+document.body.insertBefore(div, circle[0]);
+document.body.removeChild(circle[1]);
+wrapper.removeChild(heart[1]);
+
+document.body.replaceChild(btn[1], circle[1]);
 
 console.log(div);
 
