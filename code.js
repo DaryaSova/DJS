@@ -410,8 +410,8 @@
 // touchleave  палец покинул предел этого элемента 
 // touchcansel точка соприкосновения больше не регестрируется на поверхности 
 
-window.addEventListener('DOMContentLoaded', function () {
-    let box = document.querySelector('.box');
+// window.addEventListener('DOMContentLoaded', function () {
+//     let box = document.querySelector('.box');
     // box.addEventListener('touchstart', function (e) {
     //     e.preventDefault();
     //     console.log("Red box : touchstart " );
@@ -472,14 +472,55 @@ window.addEventListener('DOMContentLoaded', function () {
     // // // console.log(ans.search(reg));
     // console.log(ans.match(reg));
 
-    let str = 'My name is/ R2D2';
+//     let str = 'My name is/ R2D2';
 
-    console.log(str.match(/\//i));
-});
+//     console.log(str.match(/\//i));
+// });
+
+// let timerId = setTimeout(sayHello, 3000);
+// clearTimeout(timerId); // остановить таймаут
+
+// let timerId = setInterval(sayHello, 3000);
+// clearTimeout(timerId); // остановить таймаут 
+
+// function sayHello() {
+//     console.log('Hello world');
+// }
+// let timerId = setTimeout(function log() {
+//     console.log("Hello world");
+//     setTimeout(log, 2000);
+// });
+let btn = document.querySelector('.btn'),
+    elem = document.querySelector('.box');
 
 
+function myAnimation () {
+    let pos = 0;
+
+    let id = setInterval(frame, 1);
+
+    function frame () {
+        if (pos ==300) {
+            clearInterval();
+        } else {
+            pos++;
+            elem.style.top = pos + 'px';
+            elem.style.left = pos + 'px';
+        }
+    }
+}
 
 
+btn.addEventListener('click', myAnimation);
+
+let btnBlock = document.querySelector('.btn-block'),
+    btns = document.getElementsByTagName('button');
+
+btnBlock.addEventListener('click', function(event) {
+    if (event.target && event.target.matches('button.first')) {
+            console.log('hello');
+    }
+});  
 
 
 
