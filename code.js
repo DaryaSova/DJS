@@ -352,52 +352,135 @@
 
 // console.log(div);
 
-let btn = document.querySelectorAll("button"), // псевдомассив
-    wrapp = document.querySelector(".wrapper"),
-    link = document.querySelector("a");
+// let btn = document.querySelectorAll("button"), // псевдомассив
+//     wrapp = document.querySelector(".wrapper"),
+//     link = document.querySelector("a");
 
 
-// btn[0].onclick = function () {
-//     alert("Вы нажали первую кнопку");
-// }
+// // btn[0].onclick = function () {
+// //     alert("Вы нажали первую кнопку");
+// // }
 
-// btn[0].onclick = function () {
-//     alert("Вы опять нажали первую кнопку");
-// }
+// // btn[0].onclick = function () {
+// //     alert("Вы опять нажали первую кнопку");
+// // }
 
-btn[0].addEventListener('click', function(event) {
-    // console.log(event);
-    // let target = event.target;
+// btn[0].addEventListener('click', function(event) {
+//     // console.log(event);
+//     // let target = event.target;
 
-    // target.style.display = "none";
-    console.log("Произошло событие :  " + event.type + ' на элементе ' 
-    + event.target);
+//     // target.style.display = "none";
+//     console.log("Произошло событие :  " + event.type + ' на элементе ' 
+//     + event.target);
     
+// });
+// wrapp.addEventListener("click", function(){
+//     console.log("Произошло событие :  " + event.type + ' на элементе ' 
+//     + event.target);
+// })
+
+// link.addEventListener('click', function(event) {
+//     event.preventDefault();
+//     console.log("Произошло событие :  " + event.type + ' на элементе ' 
+//     + event.target);
+// })
+
+// btn.forEach(function(item){
+//     item.addEventListener('mouseleave', function(){
+//         console.log("Вышли!");
+//     })
+// }) 
+// // btn[0].addEventListener('click', function() {
+    
+// //     alert("Вы опять нажали первую кнопку");
+// // });
+
+// // btn[0].addEventListener('mouseenter', function () {
+// //     alert("вы навели на первую кнопку");
+// // });
+
+
+
+// МОБИЛЬНЫЕ УСТРОЙСТВА 
+
+// touchstart событие происходит при касании к элементу, аналог клика 
+// touchmove пользователь прикоснулся к элементу и начинает перемещаться в другую точку
+// touchend  палец перестает соприкасаться с поверхностью
+// touchenter палец заходит на какой-то элемент
+// touchleave  палец покинул предел этого элемента 
+// touchcansel точка соприкосновения больше не регестрируется на поверхности 
+
+window.addEventListener('DOMContentLoaded', function () {
+    let box = document.querySelector('.box');
+    // box.addEventListener('touchstart', function (e) {
+    //     e.preventDefault();
+    //     console.log("Red box : touchstart " );
+    //     console.log(e.target);
+    //     console.log(e.touches[0].target);
+    //     console.log(e.changedTouches);
+    //     console.log(e.targetTouches);
+    // });
+
+    // box.addEventListener('touchmove', function (e) {
+    //     e.preventDefault();
+    //     console.log("Red box : touchmove " + e.touches[0].pageX );
+    // });
+
+    // box.addEventListener('touchend', function (e) {
+    //     e.preventDefault();
+    //     console.log("Red box : touchend " );
+    // });
+
+// Регулрняе выражения служат чтобы удобно рабоать над строками(удалять, искать)
+// 
+
+// new RagExp('pattern', 'flags'); // 1 -то что мы хотим найти 2 - 
+// /pattern/flags
+
+    // let ans = prompt('Введите ваше имя ');
+
+    // let reg = /n/gi;
+
+    // console.log(reg.test(ans));
+    
+    // // console.log(ans.search(reg));
+    // console.log(ans.match(reg));
+    
+    
+
+    //i  хотим найти что-то вне зависимости от регистра 
+    // g глобальное вхождение
+    // m  многострочность
+
+    // \d  \D
+    // \w  \W
+    // \s  \S
+
+
+    // let pass = prompt('Введите пароль ');
+
+    // console.log(pass.replace(/./g, '*'));
+    // alert('12-34-56'.replace(/-/g, ':'));
+
+
+    //  let ans = prompt('Введите число ');
+
+    // let reg = /\d/g;
+
+  
+    
+    // // // console.log(ans.search(reg));
+    // console.log(ans.match(reg));
+
+    let str = 'My name is/ R2D2';
+
+    console.log(str.match(/\//i));
 });
-wrapp.addEventListener("click", function(){
-    console.log("Произошло событие :  " + event.type + ' на элементе ' 
-    + event.target);
-})
 
-link.addEventListener('click', function(event) {
-    event.preventDefault();
-    console.log("Произошло событие :  " + event.type + ' на элементе ' 
-    + event.target);
-})
 
-btn.forEach(function(item){
-    item.addEventListener('mouseleave', function(){
-        console.log("Вышли!");
-    })
-}) 
-// btn[0].addEventListener('click', function() {
-    
-//     alert("Вы опять нажали первую кнопку");
-// });
 
-// btn[0].addEventListener('mouseenter', function () {
-//     alert("вы навели на первую кнопку");
-// });
+
+
 
 
 
